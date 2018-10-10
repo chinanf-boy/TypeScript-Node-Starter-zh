@@ -296,21 +296,21 @@ TypeScript 使用该文件`tsconfig.json`调整项目编译选项. 让我们剖�
 
 ```json
     "compilerOptions": {
-        "module": "commonjs"，
-        "esModuleInterop": true，
-        "target": "es6"，
-        "noImplicitAny": true，
-        "moduleResolution": "node"，
-        "sourceMap": true，
-        "outDir": "dist"，
-        "baseUrl": "."，
+        "module": "commonjs",
+        "esModuleInterop": true,
+        "target": "es6",
+        "noImplicitAny": true,
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "outDir": "dist",
+        "baseUrl": ".",
         "paths": {
             "*": [
-                "node_modules/*"，
+                "node_modules/*",
                 "src/types/*"
             ]
         }
-    }，
+    },
 ```
 
 | `compilerOptions`            | 描述                                                                                                                               |
@@ -384,7 +384,7 @@ TypeScript 使用`.d.ts`文件，提供没用 TypeScript 编写的 JavaScript �
 "baseUrl": "."，
 "paths": {
     "*": [
-        "node_modules/*"，
+        "node_modules/*",
         "src/types/*"
     ]
 }
@@ -487,10 +487,10 @@ VS Code 中的 Node.js 调试很容易设置，甚至更容易使用. 该项目�
 
 ```json
 {
-  "type": "node"，
-  "request": "attach"，
-  "name": "Attach by Process ID"，
-  "processId": "${command:PickProcess}"，
+  "type": "node",
+  "request": "attach",
+  "name": "Attach by Process ID",
+  "processId": "${command:PickProcess}",
   "protocol": "inspector"
 }
 ```
